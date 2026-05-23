@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cgm-glucose-trend-predictor"
+version = "0.1.0"
+description = "CGM glucose trend regression demonstration"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+cgm-evaluate = "cgm_predictor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
