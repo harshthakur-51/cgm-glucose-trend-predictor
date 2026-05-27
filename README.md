@@ -9,6 +9,20 @@ This repository uses a synthetic cohort and is intended for engineering and
 research demonstration only. It is not a medical device and must not be used for
 treatment or dosing decisions.
 
+## Current direction
+
+The next version is based on a CGM assignment prototype covering Random Forest,
+Support Vector Regression, LSTM-style sequence modeling, and backend prediction
+serving. The upgrade path is documented here:
+
+- [Model improvement roadmap](docs/model-roadmap.md)
+- [Dataset contract](docs/dataset-contract.md)
+
+Once a de-identified CSV dataset is available, the project will move from the
+synthetic demo into a leakage-safe training pipeline with patient/session-aware
+splits, stronger baselines, model comparison, uncertainty reporting, and a
+stable prediction API.
+
 ## Model inputs
 
 - Current and preceding CGM readings
